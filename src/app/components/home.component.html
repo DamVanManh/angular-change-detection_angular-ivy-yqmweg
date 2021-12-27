@@ -1,0 +1,23 @@
+<div style="border: 1px solid black;padding: 20px">
+  <h1>Parent: Home Component</h1>
+
+  <div style="margin-bottom: 10px">
+    <button (click)="changeAngularVersion()">
+    <b>From Parent: </b>Update Angular Version 
+    </button>
+  </div>
+
+  <!-- <div style="margin-bottom: 10px"><button (click)="updateCustomer()"><b>From Parent: </b>Update Customer</button>
+  </div> -->
+
+  <div>
+    <div><b>Angular Version:</b> <span>{{ name }}</span></div>
+    <!-- <div><b>Customer  Name:</b><span>{{ customer?.name}}</span></div>
+    <div><b>Customer  Age:</b><span>{{ customer?.age}}</span></div> -->
+
+  </div>
+  <hello></hello>
+
+  <!-- <hello [name]="name" [customer]="customer"></hello> -->
+
+</div>

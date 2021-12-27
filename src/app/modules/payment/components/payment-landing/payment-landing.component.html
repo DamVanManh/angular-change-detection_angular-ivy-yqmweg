@@ -1,0 +1,10 @@
+<div style="border: 1px solid black;padding: 10px; margin: 10px;">
+	<h1>Inside Payment landing</h1>
+	<h1>Hello {{ name }}!</h1>
+	<div><button (click)="changeMe()">Change Angular Version from Payment</button></div>
+	<div style="margin: 10px;"><button (click)="addPaymentMethods()">Add Payment Methods</button></div>
+	<div *ngIf="!loading">Loading</div>
+	<div *ngIf="loading">
+		<app-payment-card [paymentMethods]="paymentMethods" [name]="name"></app-payment-card>
+	</div>
+</div>
